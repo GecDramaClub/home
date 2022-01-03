@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oleo+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital@1&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+  font-family: "Sofia", sans-serif;
+
+  font-size: 19.5px;
+  /* font-family: 'Roboto', sans-serif; */
+  /* font-family: "Sofia", sans-serif;
+  font-size: 20px;
+  text-shadow: 1px 1px 2px #ffffff; */
+  /* background-image: linear-gradient(to bottom, rgba(241, 199, 10, 0.959), rgba(255,0,0,0.6)); */
+  background-image: linear-gradient(to right, rgba(8, 8, 8, 0.931),rgba(8, 8, 8, 0.603), rgba(0, 0, 0, 0.952))!important;
+}
+.wrapper{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(195, 195, 195);
+  z-index: 100;
+  position: fixed;
+}
+.loader  {
+  animation: rotate 1s infinite;  
+  height: 45px;
+  width: 45px;
+  z-index: 1;
+  position: absolute;
+  left:50vw;
+  top:50vh;
+}
+.wrapper p{
+  z-index: 1;
+  position: absolute;
+  left:47vw;
+  top:60vh;
+}
+
+.loader:before,
+.loader:after {   
+  border-radius: 50%;
+  content: '';
+  display: block;
+  height: 16px;  
+  width: 16px;
+}
+.loader:before {
+  animation: ball1 1s infinite;  
+  background-color: #cb2025;
+  box-shadow: 30px 0 0 #f8b334;
+  margin-bottom: 10px;
+}
+.loader:after {
+  animation: ball2 1s infinite; 
+  background-color: #00a096;
+  box-shadow: 30px 0 0 #97bf0d;
+}
+
+@keyframes rotate {
+  0% { 
+    -webkit-transform: rotate(0deg) scale(0.8); 
+    -moz-transform: rotate(0deg) scale(0.8);
+  }
+  50% { 
+    -webkit-transform: rotate(360deg) scale(1.2); 
+    -moz-transform: rotate(360deg) scale(1.2);
+  }
+  100% { 
+    -webkit-transform: rotate(720deg) scale(0.8); 
+    -moz-transform: rotate(720deg) scale(0.8);
+  }
+}
+
+@keyframes ball1 {
+  0% {
+    box-shadow: 30px 0 0 #f8b334;
+  }
+  50% {
+    box-shadow: 0 0 0 #f8b334;
+    margin-bottom: 0;
+    -webkit-transform: translate(15px,15px);
+    -moz-transform: translate(15px, 15px);
+  }
+  100% {
+    box-shadow: 30px 0 0 #f8b334;
+    margin-bottom: 10px;
+  }
+}
+
+@keyframes ball2 {
+  0% {
+    box-shadow: 30px 0 0 #97bf0d;
+  }
+  50% {
+    box-shadow: 0 0 0 #97bf0d;
+    margin-top: -20px;
+    -webkit-transform: translate(15px,15px);
+    -moz-transform: translate(15px, 15px);
+  }
+  100% {
+    box-shadow: 30px 0 0 #97bf0d;
+    margin-top: 0;
+  }
+}
+.mynav{
+  background-color: rgba(255, 155, 6, 0.952);
+  font-family: 'Montserrat',sans-serif;
+}
+.navbar-brand{
+  color: rgb(255, 255, 255);
+  text-shadow: 4px 3px 2px black;
+  letter-spacing: 1px;
+  margin-left: 1vw!important;
+  font-family: 'Montserrat', serif;
+  font-size: 25px;
+  font-weight: bold;
+  animation: spin 2.5s infinite;
+}
+@keyframes spin{
+  to{
+      transition: ease;
+      transform: rotateY(360deg);
+  }
+}
+.mybrand:hover{
+  color:black;
+  text-shadow: 4px 3px 2px white;
+  transition: 0.2s ease-in-out;
+  transform: translateX(20px);
+}
+.carocontain{
+    height: 80vh;
+  }
+  .logo{
+    width: 60px;
+    height: 60px;
+  }
+  .logo img{
+    position: absolute;
+    width: 60px;
+    height: 50px;
+    border-radius: 30%;
+    image-orientation: flip;
+  }
+.myimg{
+  height: 80vh;
+  width: 70vw;
+}
+.myimg img,.myimg iframe{
+  height: 80vh;
+  width: 100%;
+}
+.nav-link{
+  color: black;
+  letter-spacing: 1px;
+  /* font-weight:600; */
+  font-size: 18px;
+  font-family: 'Roboto', sans-serif;
+}
+.nav-link:hover{
+    color: white;
+    border-bottom:1px solid white;
+    padding: 5px;
+    transition: .1s ease-in-out;
+}
+.leak{
+    color:white;
+    font-weight: bolder;
+}
+.box{
+  background-color:rgba(255, 255, 255, 0.568);
+  /* height: 100px; */
+  /* width: 50px; */
+}
+.box button{
+      width: 15vw;
+    }
+@media(max-width:600px) {
+  .nav-link:hover{
+    border-bottom: none;
+}
+  .carocontain{
+    height: 60vh;
+  }
+  .mybrand{
+    font-size: 19px;
+    margin-left: -13vw!important;
+    
+  }
+  .myimg{
+      height: 60vh;
+      width: 90vw;
+    }
+    .myimg img{
+      height: 60vh;
+    }
+    .box h4{
+      font-size: 18px;
+    }
+    .box button{
+      width: 20vw;
+    }
+ }

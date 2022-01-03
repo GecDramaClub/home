@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="shortcut icon" href="./Drama club white.png" type="image/x-icon">
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,300&display=swap');
+      body{
+        height: auto;
+      }
+      .events{
+        font-family: 'Montserrat',sans-serif;
+        border-radius: 10px;
+        letter-spacing: 1px;
+        color: cyan!important;
+      }
+      .events a{
+        font-size: 15px;
+        text-decoration: none;
+        color: greenyellow;
+      }
+    </style>
+    <title>Event</title>
+</head>
+<body>
+  <div class="wrapper">
+    <div class="loader"></div>
+    <p>Drama Incoming.....</p>
+  </div>
+    <!-- header -->
+    <nav class="navbar navbar-expand-lg mynav">
+        <div class="container-fluid drama">
+          <div class="logo">
+            <img src="./Drama club white.png" alt=">">
+          </div>
+          <a class="navbar-brand mx-3 mybrand text-uppercase"  href="#">GEC Drama Club</a>
+          <button class="navbar-toggler navbar-dark" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation" style="height:30px; width: 40px;font-size: 15px; padding:1px; background-color:rgba(14, 134, 40, 0.986);">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarScroll">
+            <ul class="navbar-nav ms-auto mx-4 my-2 my-lg-0 navbar-nav-scroll hover-overlay">
+              <li class="nav-item mx-3">
+                <a class="nav-link" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item mx-3">
+                    <a class="nav-link" href="magzine.html">Magzine</a>
+                  </li>
+              <li class="nav-item mx-3">
+                <a class="nav-link leak active" href="event.html">Events</a>
+              </li>
+              <li class="nav-item mx-3">
+                <a class="nav-link" href="achievement.html">Achievements</a>
+              </li>
+              <li class="nav-item mx-3">
+                <a class="nav-link" href="contact.html">About Us</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- header end -->
+      
+      <div class="container-fluid mb-2 px-5 d-flex justify-content-center">
+        <div id="carouselExampleIndicators" class="carousel carousel-light carocontain slide my-4" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              <!-- <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" aria-label="Slide 6"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="6" aria-label="Slide 7"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="7" aria-label="Slide 8"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="8" aria-label="Slide 9"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="9" aria-label="Slide 10"></button> -->
+            </div>
+            <div class="carousel-inner myimg">
+              <div class="carousel-item active img-fluid" data-bs-interval="1000">
+                <img src="https://drive.google.com/uc?export=view&id=16DUEkYveh10Hmj87XJoHf6X1GA_62z01" class="d-block" alt="...">
+              </div>
+              <div class="carousel-item img-fluid" data-bs-interval="3000">
+                <img src="https://drive.google.com/uc?export=view&id=16Eipg6_JpgjriHQXJ90Fy7JkD9wxE-ln" class="d-block" alt="...">
+              </div>
+              <div class="carousel-item img-fluid" data-bs-interval="3000">
+                <img src="https://drive.google.com/uc?export=view&id=16DcN_ztA9np3G-YePCsH6xIMh7vA557X" class="d-block" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+      </div>
+      <!-- carousel end -->
+      <!-- event details -->
+      <br>
+      <div class="container-fluid mx-auto mt-3 mb-4 text-light events row d-flex justify-content-center">
+        <h2 class="text-center" style="color:lawngreen;">Event Details</h2>
+        <div class="col-lg-12 mt-1" >
+          <h3 class="text-capitalize text-warning">Upcoming Events</h2>
+          <div class="mx-2 mb-3">
+            <p>Drama CLub Council Inaugrual Event</p>
+            <p></p>
+            <a href="#" download="">Download The Broshure</a>
+          </div>
+        </div>
+        <div class="col-lg-12 mt-1">
+          <h3 class="text-capitalize text-warning text-lg-end text-sm-center">Recent Events</h2>
+          <div class="mx-2 mb-3 text-lg-end text-sm-center">
+            <p>Drama CLub Council Inaugrual Event</p>
+            <p>Drama Club Council Inaugural Ceremony was hosted on 16 December 2021 from 10:00AM at the Mining Department Seminar Hall. The inaugural ceremony started off with a Musical Performance by the GEC Music Club. The Lamp lighting ceremony took place at the hands of the honourable Chief Guest Shri Siddhesh. A report was delivered by Former General Secretary, Mr. Viddesh Padiyar that included previous years’ activities. We got the chance to hear a motivating and appreciative speech by Mr. Siddhesh Naik. The newly formed council members were Presented with badges and mementos to the outgoing council members. The results of short film competition titled “Astitva: Conspiracy Theories” organized by the Drama Club for the GEC Students were announced and followed by screening of winning short films. Magazine Secretary Mr. Srinidhi Bhat introduced the Drama Club e-magazine “Kala Tarang”. After the ceremony an interactive session was held for the participants of the short film competition with the judges Mr. Geetesh Gawas and Mr. Sainath Uskaikar.</p>
+            <a href="#" download="">Download The Broshure</a>
+          </div>
+          <div class="mx-2 mb-3 text-lg-end text-sm-center">
+            <p>Event 2</p>
+            <a href="#" download="">Download The Broshure</a>
+          </div>
+        </div>
+        </div>
+       
+      <!-- event details ends-->
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script>
+  const loader = document.querySelector(".wrapper");
+  window.addEventListener("load",()=>{
+    setTimeout(()=>{loader.style.display = "none";},1);
+  });
+</script>
+</body>
+</html>
